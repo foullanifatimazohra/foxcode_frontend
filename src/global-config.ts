@@ -1,4 +1,4 @@
 export const LOCALES = ["en", "ar"];
 export const DEFAULT_LOCALE = "en";
 
-export const localePrefix = "as-needed";
+export const LOCALE_PREFIX = "as-needed";
