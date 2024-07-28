@@ -118,8 +118,14 @@ const config: Config = {
       },
     },
     fontFamily: {
-      primary: ["Graphik", "sans-serif"],
-      secondary: ["Merriweather", "serif"],
+      primary: ["Biennale", "sans-serif"],
+    },
+    fontSize: {
+      h1: "48px",
+      h2: "36px",
+      h3: "24px",
+      subtitle: "16px",
+      body: "18px",
     },
     extend: {
       backgroundImage: {
