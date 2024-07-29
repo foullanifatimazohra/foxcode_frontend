@@ -1,14 +1,16 @@
 "use client";
 
-import Button from "@/components/ui/Button";
-import { useBoolean } from "@/hooks/use-boolean";
-import { usePathname } from "@/navigation";
-import { Moon, Languages, Menu } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
-import { useLocale } from "next-intl";
+import { Moon, Languages, Menu } from "lucide-react";
+import { usePathname } from "@/navigation";
+import { useBoolean } from "@/hooks/use-boolean";
+import Button from "@/components/ui/Button";
 
 function Header() {
   const openNavigation = useBoolean();
+
+  const t = useTranslations();
 
   const pathname = usePathname();
 
@@ -33,7 +35,9 @@ function Header() {
               <Button variant="text" className="px-0">
                 <Moon />
               </Button>
-              <Button variant="outlined">Get in toutch</Button>
+              <Button variant="outlined">
+                {t("header.buttons.getInTouch")}
+              </Button>
               <Button
                 variant="outlined"
                 startIcon={<Languages />}

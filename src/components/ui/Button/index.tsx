@@ -1,5 +1,5 @@
-import { Link } from "@/navigation";
 import React from "react";
+import { Link } from "@/navigation";
 
 import { sizes, styles } from "./styles";
 
@@ -13,6 +13,7 @@ interface ButtonProps {
   size?: "xsmall" | "small" | "medium" | "large" | "xlarge";
   startIcon?: React.ReactNode; // optional icon before text
   endIcon?: React.ReactNode; // optional icon after text
+  [key: string]: any;
 }
 
 function Button({
