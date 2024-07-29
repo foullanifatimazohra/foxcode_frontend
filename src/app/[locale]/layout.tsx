@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import Header from "@/components/layout/header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
@@ -23,6 +24,7 @@ export default async function RootLayout({
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>
