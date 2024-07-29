@@ -1,9 +1,18 @@
+"use client";
+
 import Button from "@/components/ui/Button";
+import { useBoolean } from "@/hooks/use-boolean";
+import { usePathname } from "@/navigation";
 import { Moon, Languages, Menu } from "lucide-react";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
 function Header() {
-  const openNavigation = true;
+  const openNavigation = useBoolean();
+
+  const pathname = usePathname();
+
+  const locale = useLocale();
 
   return (
     <header className="py-5 border-b border-primary-gray-200">
@@ -17,22 +26,31 @@ function Header() {
         <div className="flex gap-4">
           <nav
             className={`${
-              openNavigation ? "flex" : "hidden"
-            } fixed top-[5rem] left-0 right-0 bottom-0 bg-white lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+              openNavigation.value ? "flex" : "hidden"
+            } fixed top-[5rem] left-0 right-0 bottom-0 bg-white z-10 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
           >
             <div className="gap-4 relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
               <Button variant="text" className="px-0">
                 <Moon />
               </Button>
               <Button variant="outlined">Get in toutch</Button>
-              <Button variant="outlined" startIcon={<Languages />}>
-                AR
+              <Button
+                variant="outlined"
+                startIcon={<Languages />}
+                href={pathname}
+                locale={locale === "ar" ? "en" : "ar"}
+              >
+                {locale === "ar" ? "EN" : "AR"}
               </Button>
             </div>
           </nav>
 
-          <Button variant="primary">
-            <Menu />
+          <Button
+            variant="primary"
+            onClick={openNavigation.onToggle}
+            className="!p-[12px]"
+          >
+            <Menu size={20} />
           </Button>
         </div>
       </div>
