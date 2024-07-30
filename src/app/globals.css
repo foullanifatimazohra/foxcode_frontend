@@ -1,11 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url(https://db.onlinewebfonts.com/c/ab115b4a1db57541d7c9c9e39db76c56?family=Biennale);
-
-*,
-body {
-  box-sizing: border-box;
-  font-family: "Biennale", sans-serif;
-}
+  

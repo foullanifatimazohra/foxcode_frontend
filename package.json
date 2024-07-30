@@ -11,6 +11,8 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.11.0",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -21,7 +23,8 @@
     "next-intl": "^3.17.2",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.4.0"
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
