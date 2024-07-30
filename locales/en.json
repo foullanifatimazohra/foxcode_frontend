@@ -51,6 +51,16 @@
           "text": "Industries served"
         }
       ]
+    },
+    "portfolio": {
+      "subtitle": "Featured digital <br /> Products projects",
+      "title": "Our portfolio features a diverse array of digital products crucial for the growth of contemporary businesses. Showcasing B2B solutions,<highlight> B2C mobile apps, and full-cycle projects, our work spans early-stage startups to established enterprises at different growth stages</highlight>",
+      "cta": "View all projects",
+      "projects": [
+        "A digital e-wallet mobile app offering a gamified experience, now utilized at over 260 fueling stations. Users can effortlessly top-up, play games, find stations, send credit to others, and earn points for their activities,  level up their profiles, and unlock exclusive rewards",
+        "An internal gamified well-being app for Bank Muscat, designed to encourage fitness through rewarding activities. The app fosters friendly competition among employees and departments, promoting a healthy lifestyle. ",
+        "A multifaceted digital project for Oman’s official participation in Expo 2020 Dubai. This includes creating an official website and a mobile virtual experience among others, offering users an engaging and immersive showcase of Sultanate Oman’s participation."
+      ]
     }
   },
   "header": {
