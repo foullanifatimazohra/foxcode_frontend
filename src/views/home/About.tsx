@@ -1,10 +1,11 @@
 import { getTranslations } from "next-intl/server";
+import { MovingLine } from "@/components/ui/moving-line";
 
 async function About() {
   const t = await getTranslations();
 
   return (
-    <section className="flex justify-center items-center my-5 text-center flex-col">
+    <section className="flex justify-center gap-4 items-center my-5 text-center flex-col">
       <p
         className="text-body mt-2.5 font-normal text-primary-gray-900 max-w-[50ch]"
         dangerouslySetInnerHTML={{
@@ -13,6 +14,9 @@ async function About() {
           }),
         }}
       />
+
+      <MovingLine />
+
       {renderDigitalExperience(t)}
     </section>
   );
