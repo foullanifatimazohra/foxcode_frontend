@@ -1,1 +1,43 @@
-{}
+{
+  "home": {
+    "hero": {
+      "title": "Creating <highlight>High-Performance</highlight> Digital Solutions.",
+      "paragraph": "From concept to execution, transforming businesses with world-class digital user experiences, mobile apps, web portals, and products",
+      "cta": "🚀  Book 30m session"
+    },
+    "cta": {
+      "startAProject": "Start a project"
+    },
+    "about": {
+      "paragraph": "<b>Raising the Bar</b> in Digital Innovation, we transform digital products with cutting-edge design and engineering, setting new industry standards for excellence",
+      "experience": {
+        "title": "Bringing life to digital <brand>experiences</brand>",
+        "paragraph": "products with cutting-edge design and engineering, setting new industry standards for excellence."
+      }
+    }
+  },
+  "header": {
+    "buttons": {
+      "getInTouch": "Get in touch"
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "Let’s talk",
+      "paragraph": "Our team will support you in finalizing your project roadmap and learning About your scope in the process. <b>We replay within 24 hours</b>",
+      "contactUs": "Contact Us",
+      "freeQuotation": "Get Free Quotation"
+    },
+    "paragraph": "Creative digital solution house with a mission to elevate digital User experiences",
+    "career": {
+      "title": "Career",
+      "paragraph": "Looking for a job opportunity? <br /> <br /> <b>Jobs@foxcod.com </b>"
+    },
+    "work": {
+      "title": "Work inquiries",
+      "paragraph": "Interested in working with us? <br /> <br /> <b>hello@foxcod.com  </b> <br /> <b>+968 77 333 850 </b>"
+    },
+    "rights": "© 2024 Foxcode. All Rights Reserved ",
+    "countries": ["Oman", "UAE", "KSA", "Qatar", "USA"]
+  }
+}

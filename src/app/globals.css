@@ -2,13 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Biennale";
-  src: url("../../public/assets/fonts/Biennale.ttf");
-}
+@import url(https://db.onlinewebfonts.com/c/ab115b4a1db57541d7c9c9e39db76c56?family=Biennale);
 
 *,
 body {
   box-sizing: border-box;
-  font-family: "Biennale";
+  font-family: "Biennale", sans-serif;
 }

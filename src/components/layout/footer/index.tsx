@@ -52,7 +52,7 @@ const renderFooterColumns = (t: any) => (
         className="text-body mt-2.5 text-primary-gray-700 max-w-[35ch]"
         dangerouslySetInnerHTML={{
           __html: t.markup("footer.career.paragraph", {
-            b: (chunks: string) => `<b className="font-bold">${chunks}</b>`,
+            b: (chunks: string) => `<b class="font-bold">${chunks}</b>`,
           }),
         }}
       />
@@ -63,7 +63,7 @@ const renderFooterColumns = (t: any) => (
         className="text-body mt-2.5 text-primary-gray-700 max-w-[35ch]"
         dangerouslySetInnerHTML={{
           __html: t.markup("footer.work.paragraph", {
-            b: (chunks: string) => `<b className="font-bold">${chunks}</b>`,
+            b: (chunks: string) => `<b class="font-bold">${chunks}</b>`,
           }),
         }}
       />

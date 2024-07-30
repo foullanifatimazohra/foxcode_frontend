@@ -11,7 +11,7 @@ async function CallToAction() {
         className="text-body font-normal text-primary-gray-700"
         dangerouslySetInnerHTML={{
           __html: t.markup("footer.cta.paragraph", {
-            b: (chunks) => `<b className="font-bold">${chunks}</b>`,
+            b: (chunks) => `<b class="font-bold">${chunks}</b>`,
           }),
         }}
       />
@@ -19,7 +19,7 @@ async function CallToAction() {
         <Button>{t("footer.cta.contactUs")}</Button>
         <Button
           variant="outlined"
-          className="text-primary-brand-500 border-primary-brand-500"
+          className="!text-primary-brand-500 !border-primary-brand-500"
         >
           {t("footer.cta.freeQuotation")}
         </Button>

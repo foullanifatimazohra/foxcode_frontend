@@ -1,11 +1,9 @@
-import Button from "@/components/ui/Button";
+import Hero from "@/views/home/Hero";
 
 export default function Home() {
   return (
     <main>
-      <Button variant="danger" size="xsmall">
-        Click me!
-      </Button>
+      <Hero />
     </main>
   );
 }
