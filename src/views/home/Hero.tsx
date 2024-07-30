@@ -1,6 +1,7 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import MagneticFramer from "@/components/ui/magnetic-framer";
 import Button from "@/components/ui/Button";
 
 import Mask from "../../../public/assets/images/home/mask.svg";
@@ -27,7 +28,10 @@ async function Hero() {
       <p className="text-body text-primary-gray-900 font-normal leading-6 text-center max-w-[60ch]">
         {t("home.hero.paragraph")}
       </p>
-      <Button size="xlarge">{t("home.hero.cta")}</Button>
+      <MagneticFramer>
+        <Button size="xlarge">{t("home.hero.cta")}</Button>
+      </MagneticFramer>
+
       {maskVideo}
       {renderInfo(t)}
     </section>

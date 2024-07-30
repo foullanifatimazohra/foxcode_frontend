@@ -3,7 +3,17 @@
     "hero": {
       "title": "Creating <highlight>High-Performance</highlight> Digital Solutions.",
       "paragraph": "From concept to execution, transforming businesses with world-class digital user experiences, mobile apps, web portals, and products",
-      "cta": "🚀  Book 30m session"
+      "cta": "🚀  Book 30m session",
+      "info": [
+        {
+          "count": "21M+",
+          "text": "Traffic generated  "
+        },
+        {
+          "count": "$3bn+",
+          "text": "Combined client revenue "
+        }
+      ]
     },
     "cta": {
       "startAProject": "Start a project"
@@ -11,9 +21,36 @@
     "about": {
       "paragraph": "<b>Raising the Bar</b> in Digital Innovation, we transform digital products with cutting-edge design and engineering, setting new industry standards for excellence",
       "experience": {
-        "title": "Bringing life to digital <brand>experiences</brand>",
+        "title": "Bringing life to digital <highlight>experiences</highlight>",
         "paragraph": "products with cutting-edge design and engineering, setting new industry standards for excellence."
-      }
+      },
+      "cards": [
+        { "count": "+1,7m", "text": "Digital products users" },
+        {
+          "count": "+1.3m",
+          "text": "Combined app downloads"
+        },
+        {
+          "count": "2018",
+          "text": "Year founded"
+        },
+        {
+          "count": "+14",
+          "text": "Industries served"
+        },
+        {
+          "count": "+60",
+          "text": "Projects"
+        },
+        {
+          "count": "+100",
+          "text": "Success partners"
+        },
+        {
+          "count": "+14",
+          "text": "Industries served"
+        }
+      ]
     }
   },
   "header": {
