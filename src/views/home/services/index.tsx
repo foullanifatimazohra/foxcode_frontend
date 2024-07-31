@@ -3,6 +3,8 @@ import Image from "next/image";
 import { industries } from "@/constants";
 import Button from "@/components/ui/Button";
 
+import AnimatedGrid from "./AnimatedGrid";
+
 async function Services() {
   const t = await getTranslations();
 
@@ -14,8 +16,9 @@ async function Services() {
           __html: t.rich("home.services.title"),
         }}
       />
+      <AnimatedGrid />
       <p
-        className="text-h3 font-bold text-primary-gray-900 max-w-[40ch] mt-[200px]"
+        className="text-h3 font-bold text-primary-gray-900 max-w-[40ch] mt-[100px]"
         dangerouslySetInnerHTML={{
           __html: t.markup("home.services.content", {
             highlight: (chunks: string) =>
@@ -23,7 +26,8 @@ async function Services() {
           }),
         }}
       />
-      <div className="flex flex-wrap gap-[32px] md:max-w-[1200px] mb-16 mt-10">
+
+      <div className="flex flex-wrap gap-[32px] md:max-w-[1100px] justify-center mb-16 mt-10">
         {industries.map((industry: any, index: any) => (
           <div
             key={index}

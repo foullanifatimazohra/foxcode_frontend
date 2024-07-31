@@ -19,15 +19,36 @@ export const portfolioCards = [
   },
 ];
 
+export const heroCompaniesLogos = [
+  "bank-muskat.svg",
+  "ministry-of-finance.svg",
+  "world-health.svg",
+];
+
 export const keyServices = [
   {
-    text: "",
-    background: "",
-    style: "",
+    text: "home.services.cards.0",
+    background: "/assets/images/home/ux-background.png",
+    backgroundOverlay: "custom-linear-gradient",
   },
-  {},
-  {},
-  {},
+  {
+    text: "home.services.cards.1",
+    background: "/assets/images/home/develop-background.png",
+    className: "bg-primary-brand-900",
+    backgroundOverlay: "brand-linear-gradient",
+  },
+  {
+    text: "home.services.cards.2",
+    background: "/assets/images/home/mvp-background.png",
+    className: "bg-primary-brand-500",
+    backgroundColor: "brand-linear-gradient",
+  },
+  {
+    text: "home.services.cards.3",
+    background: "/assets/videos/support-video.mp4",
+    isBackgroundVideo: true,
+    backgroundOverlay: "light-linear-gradient",
+  },
 ];
 
 export const industries = [

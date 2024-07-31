@@ -1,16 +1,12 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import { heroCompaniesLogos } from "@/constants";
 import MagneticFramer from "@/components/ui/magnetic-framer";
 import Button from "@/components/ui/Button";
 
 import Mask from "../../../../public/assets/images/home/mask.svg";
 
-const companiesLogos = [
-  "bank-muskat.svg",
-  "ministry-of-finance.svg",
-  "world-health.svg",
-];
 async function Hero() {
   const t = await getTranslations();
 
@@ -74,7 +70,7 @@ const renderInfo = (t: any) => (
       ))}
     </div>
     <div className="flex gap-10 max-sm:flex-col">
-      {companiesLogos.map((companyLogo: any, index: number) => (
+      {heroCompaniesLogos.map((companyLogo: any, index: number) => (
         <Image
           key={index}
           src={`/assets/images/companies/${companyLogo}`}

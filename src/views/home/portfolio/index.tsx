@@ -51,7 +51,7 @@ function portfolioCard(
   return (
     <div key={index} className="flex gap-5 justify-between max-sm:flex-col">
       <div
-        className={`basis-1/2 py-[64px] max-w-[50ch] ${displayDivider ? "border-t border-primary-gray-300" : ""}`}
+        className={`basis-1/2 py-[64px] max-w-[50ch] ${displayDivider ? "border-t border-primary-gray-200" : ""}`}
       >
         <Image
           src={logo}

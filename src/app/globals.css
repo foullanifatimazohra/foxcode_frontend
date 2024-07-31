@@ -1,4 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+.custom-linear-gradient {
+  background: linear-gradient(
+    201.64deg,
+    rgba(44, 46, 89, 0.757) 14.2%,
+    #747af5 98.81%
+  );
+}
+
+.brand-linear-gradient {
+  background: linear-gradient(180deg, rgba(32, 88, 225, 0) 0%, #2058e1 100%);
+}
+
+.light-linear-gradient {
+  background: linear-gradient(
+    0deg,
+    rgba(20, 29, 47, 0.25),
+    rgba(20, 29, 47, 0.25)
+  );
+}
