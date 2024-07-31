@@ -1,7 +1,7 @@
-import Services from "@/views/home/Services";
-import Portfolio from "@/views/home/Portfolio";
-import Hero from "@/views/home/Hero";
-import About from "@/views/home/About";
+import Services from "@/views/home/services";
+import Portfolio from "@/views/home/portfolio";
+import Hero from "@/views/home/hero";
+import About from "@/views/home/about";
 
 export default function Home() {
   return (

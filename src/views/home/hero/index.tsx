@@ -4,7 +4,7 @@ import Image from "next/image";
 import MagneticFramer from "@/components/ui/magnetic-framer";
 import Button from "@/components/ui/Button";
 
-import Mask from "../../../public/assets/images/home/mask.svg";
+import Mask from "../../../../public/assets/images/home/mask.svg";
 
 const companiesLogos = [
   "bank-muskat.svg",
