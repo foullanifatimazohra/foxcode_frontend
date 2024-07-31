@@ -18,3 +18,49 @@ export const portfolioCards = [
     text: "home.portfolio.projects.2",
   },
 ];
+
+export const keyServices = [
+  {
+    text: "",
+    background: "",
+    style: "",
+  },
+  {},
+  {},
+  {},
+];
+
+export const industries = [
+  {
+    image: "/assets/images/home/industries/0.jpeg",
+    text: "home.services.industries.0",
+  },
+  {
+    image: "/assets/images/home/industries/1.jpeg",
+    text: "home.services.industries.1",
+  },
+  {
+    image: "/assets/images/home/industries/2.jpeg",
+    text: "home.services.industries.2",
+  },
+  {
+    image: "/assets/images/home/industries/3.jpeg",
+    text: "home.services.industries.3",
+  },
+  {
+    image: "/assets/images/home/industries/4.jpeg",
+    text: "home.services.industries.4",
+  },
+  {
+    image: "/assets/images/home/industries/5.jpeg",
+    text: "home.services.industries.5",
+  },
+  {
+    image: "/assets/images/home/industries/6.jpeg",
+    text: "home.services.industries.6",
+  },
+  {
+    image: "/assets/images/home/industries/7.jpeg",
+    text: "home.services.industries.7",
+  },
+];

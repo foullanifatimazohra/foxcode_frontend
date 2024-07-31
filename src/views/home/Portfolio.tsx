@@ -4,8 +4,6 @@ import Image from "next/image";
 import { portfolioCards } from "@/constants";
 import Button from "@/components/ui/Button";
 
-// Todo : add the divider
-
 async function Portfolio() {
   const t = await getTranslations();
   return (
@@ -35,35 +33,47 @@ async function Portfolio() {
 
       {/* Portfolio Cards */}
       <div className="flex flex-col d gap-[100px] mt-[70px]">
-        {portfolioCards.map((card: any, index: number) => (
-          <div
-            key={index}
-            className="flex gap-5 items-center justify-between max-sm:flex-col"
-          >
-            <div className="basis-1/2">
-              <Image
-                src={card.logo}
-                width={150}
-                height={50}
-                alt={card.title}
-                className="object-contain"
-              />
-              <p className="font-normal mt-5 text-primary-gray-900 max-w-[45ch]">
-                {t(card.text)}
-              </p>
-            </div>
-            <Image
-              src={card.backgroundImage}
-              alt={card.title}
-              width={600}
-              height={360}
-              className="object-contain"
-            />
-          </div>
-        ))}
+        {portfolioCards.map((card: any, index: number) =>
+          portfolioCard(index, card, t, index > 0)
+        )}
       </div>
     </section>
   );
 }
+
+function portfolioCard(
+  index: number,
+  card: any,
+  t: any,
+  displayDivider: boolean
+): React.JSX.Element {
+  const { logo, text, backgroundImage, title } = card || {};
+  return (
+    <div key={index} className="flex gap-5 justify-between max-sm:flex-col">
+      <div
+        className={`basis-1/2 py-[64px] max-w-[50ch] ${displayDivider ? "border-t border-primary-gray-300" : ""}`}
+      >
+        <Image
+          src={logo}
+          width={150}
+          height={50}
+          alt={title}
+          className="object-contain"
+        />
+        <p className="font-normal mt-5 text-primary-gray-900 max-w-[45ch]">
+          {t(text)}
+        </p>
+      </div>
+      <Image
+        src={backgroundImage}
+        alt={title}
+        width={600}
+        height={360}
+        className="object-contain"
+      />
+    </div>
+  );
+}
+//----------------------------------------------------------------
 
 export default Portfolio;

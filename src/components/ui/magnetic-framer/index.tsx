@@ -29,7 +29,7 @@ const MagneticFramer: React.FC<FramerProps> = ({ children }) => {
 
   return (
     <motion.div
-      style={{ position: "relative" }}
+      style={{ position: "relative", paddingBottom: "30px" }}
       ref={ref}
       onMouseMove={handleMouse}
       onMouseLeave={reset}

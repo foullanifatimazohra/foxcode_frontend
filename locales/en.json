@@ -61,6 +61,28 @@
         "An internal gamified well-being app for Bank Muscat, designed to encourage fitness through rewarding activities. The app fosters friendly competition among employees and departments, promoting a healthy lifestyle. ",
         "A multifaceted digital project for Oman’s official participation in Expo 2020 Dubai. This includes creating an official website and a mobile virtual experience among others, offering users an engaging and immersive showcase of Sultanate Oman’s participation."
       ]
+    },
+    "services": {
+      "title": "Key <br/> services",
+      "content": "Our portfolio features a diverse array of digital products crucial for the growth of contemporary businesses. Showcasing B2B solutions, <highlight>B2C mobile apps, and</highlight> ",
+      "cards": [
+        "Raise user engagement Through <b>UX Auditing & Design</b>",
+        "Develope Enterprise  Web Solution or  website",
+        "Build an <b> MVP </b> or full cycle Digital Product / App",
+        "<b>Take over </b> your Existing solutions & provide extend support"
+      ],
+      "industries": [
+        "Health care",
+        "Bank & Insurance",
+        "Non- Profits",
+        "Start Ups",
+        "Venture Capitals",
+        "Transportation & Logistics",
+        "Governments",
+        "Tourism & Experience Providers"
+      ],
+      "question": "<b>Don’t see your industry? </b> This list is not comprehensive. Contact us to learn more and learn about our experience with your industry.",
+      "cta": "Contact Us"
     }
   },
   "header": {
