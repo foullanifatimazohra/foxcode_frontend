@@ -85,3 +85,10 @@ export const industries = [
     text: "home.services.industries.7",
   },
 ];
+
+export const playGroundsCardsIcons = [
+  "/assets/images/home/rocket.svg",
+  "/assets/images/home/rocket.svg",
+  "/assets/images/home/rocket.svg",
+  "/assets/images/home/star.svg",
+];

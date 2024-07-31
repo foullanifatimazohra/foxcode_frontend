@@ -83,6 +83,61 @@
       ],
       "question": "<b>Don’t see your industry? </b> This list is not comprehensive. Contact us to learn more and learn about our experience with your industry.",
       "cta": "Contact Us"
+    },
+    "playgrounds": {
+      "subtitle": "Our playgrounds",
+      "title": "Identifying problems, needs and solutions through a validated and scientific approach.",
+      "cta": "View all Services",
+      "services": [
+        {
+          "title": "Experience Design",
+          "text": "Identifying problems, needs and solutions through a validated and scientific approach.",
+          "items": [
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing"
+          ]
+        },
+        {
+          "title": "Experience Design",
+          "text": "Identifying problems, needs and solutions through a validated and scientific approach.",
+          "items": [
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing"
+          ]
+        },
+        {
+          "title": "Experience Design",
+          "text": "Identifying problems, needs and solutions through a validated and scientific approach.",
+          "items": [
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing"
+          ]
+        },
+        {
+          "title": "Experience Design",
+          "text": "Identifying problems, needs and solutions through a validated and scientific approach.",
+          "items": [
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing",
+            "user research and testing"
+          ]
+        }
+      ]
     }
   },
   "header": {

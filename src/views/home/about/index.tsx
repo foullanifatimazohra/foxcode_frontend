@@ -7,7 +7,7 @@ async function About() {
   const t = await getTranslations();
 
   return (
-    <section className="flex justify-center gap-4 items-center my-[100px] text-center flex-col">
+    <section className="flex justify-center gap-4 w-full items-center my-[100px] text-center flex-col">
       <p
         className="text-body mt-2.5 font-normal text-primary-gray-900 max-w-[50ch]"
         dangerouslySetInnerHTML={{
@@ -25,7 +25,7 @@ async function About() {
 }
 
 const renderDigitalExperience = (t: any) => (
-  <div className="flex flex-col gap-4 items-center">
+  <div className="flex flex-col gap-4 items-center w-full">
     <h2
       className="text-h2 text-center leading-[66px] text-primary-gray-900 font-bold"
       dangerouslySetInnerHTML={{
