@@ -49,16 +49,16 @@ const renderBentoGrid = (t: any) => (
         key={index}
         className={`relative min-w-[290px] max-sm:h-[300px] bg-primary-gray-25 p-6 border-primary-gray-200 rounded-lg justify-end  ${index === 0 ? "md:row-span-2" : ""}`}
       >
+        {index === 0 && (
+          <Image
+            src="/assets/images/home/card-image.png"
+            width={300}
+            height={40}
+            alt={card.text}
+            className="absolute top-10 left-0 right-0 object-cover w-full"
+          />
+        )}
         <div className="text-start">
-          {index === 0 && (
-            <Image
-              src="/assets/images/home/card-image.png"
-              width={300}
-              height={40}
-              alt={card.text}
-              className="absolute top-10 left-0 right-0"
-            />
-          )}
           <h4 className="text-[40px] font-bold text-primary-gray-900">
             {card.count}
           </h4>

@@ -1,5 +1,6 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 import Card from "./Card";
 
@@ -23,6 +24,21 @@ async function Faq() {
             <Card content={content} key={index} />
           ))}
         </div>
+      </div>
+      <div className="grid relative justify-center my-[200px] items-center py-8 px-10 rounded-lg lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 bg-primary-gray-900">
+        {t.raw("home.faq.info").map((card: any, index: number) => (
+          <div key={index}>
+            <h3 className="font-bold text-h2 text-white">{card.count}</h3>
+            <p className="font-normal text-white">{card.text}</p>
+          </div>
+        ))}
+        <Image
+          src="/assets/images/home/background-faq.png"
+          width={140}
+          height={300}
+          alt="background Image"
+          className="absolute top-0 right-0 w-auto object-contain"
+        />
       </div>
     </section>
   );

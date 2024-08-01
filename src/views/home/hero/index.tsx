@@ -74,7 +74,7 @@ const renderInfo = (t: any) => (
         <Image
           key={index}
           src={`/assets/images/companies/${companyLogo}`}
-          alt={companyLogo}
+          alt={`Company ${index}`}
           width={110}
           height={28}
         />

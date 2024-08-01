@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const cardVariants = {
@@ -15,6 +15,8 @@ const cardVariants = {
 
 function AnimatedProcess() {
   const controls = useAnimation();
+
+  const locale: string = useLocale();
 
   const t = useTranslations();
 
@@ -37,7 +39,7 @@ function AnimatedProcess() {
   return (
     <section
       ref={ref}
-      className="mt-[55px] border-t flex justify-between gap-4 max-sm:divide-y md:divide-x divide-primary-gray-200 flex-wrap border-primary-gray-200"
+      className="mt-[55px] border-t flex justify-between gap-4 max-sm:divide-y rtl:divide-x-reverse md:divide-x divide-primary-gray-200 flex-wrap border-primary-gray-200"
     >
       {t.raw("home.agileProcess.process").map((process: any, index: number) => (
         <motion.div
@@ -45,18 +47,22 @@ function AnimatedProcess() {
           initial="hidden"
           animate={controls}
           custom={index}
-          className="pl-3"
+          className="rtl:pr-3 pl-3"
           variants={cardVariants}
         >
           <p className="my-8 text-[20px] font-bold">{process.title}</p>
           {process.steps.map((text: string, stepIndex: number) => (
             <motion.div
               key={stepIndex}
-              className="flex w-fit gap-4 px-2 py-1 rounded-[72px] border border-primary-gray-100 items-center"
+              className={`flex w-fit  rtl:mr-[${stepIndex * 20}px] ml-[${stepIndex * 20}px] gap-4 px-2 py-1 rounded-[72px] border border-primary-gray-100 items-center`}
               initial="hidden"
               animate={controls}
               custom={stepIndex}
-              style={{ marginLeft: `${stepIndex * 20}px`, marginTop: "16px" }}
+              style={{
+                [locale === "ar" ? "marginRight" : "marginLeft"]:
+                  `${stepIndex * 20}px`,
+                marginTop: "16px",
+              }}
               variants={cardVariants}
             >
               <p className="h-[32px] w-[32px] flex items-center justify-center rounded-full bg-primary-gray-200">

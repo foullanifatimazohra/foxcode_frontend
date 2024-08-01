@@ -19,7 +19,6 @@ async function Testimonials() {
       />
 
       {/* testimonials Swiper */}
-
       <TestimonialsSwiper />
     </section>
   );

@@ -60,7 +60,7 @@ function portfolioCard(
           src={logo}
           width={150}
           height={50}
-          alt={title}
+          alt={t(title)}
           className="object-contain"
         />
         <p className="font-normal mt-5 text-primary-gray-900 max-w-[45ch]">
