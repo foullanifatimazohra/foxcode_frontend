@@ -55,3 +55,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.slider-gradient {
+  background: linear-gradient(
+    91.44deg,
+    #314189 8.63%,
+    rgba(5, 25, 121, 0.918) 97.84%
+  );
+}

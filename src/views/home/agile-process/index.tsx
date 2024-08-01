@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
+import ProcessSlider from "./ProcessSwiper";
 import AnimatedProcess from "./AnimatedProcess";
 
 async function AgileProcess() {
@@ -27,6 +28,7 @@ async function AgileProcess() {
 
       {/* strategy raws */}
       <AnimatedProcess />
+      <ProcessSlider />
     </section>
   );
 }

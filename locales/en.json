@@ -201,6 +201,25 @@
             "Launch"
           ]
         }
+      ],
+      "cards": [
+        {
+          "title": "Elevating digital user <span class=\"!text-primary-brand-200\">experiences</span>",
+          "cta": "🚀  Book 30m session",
+          "content": "We believe that exceptional product strategy and solid UI/UX designs are the core foundation of creating an unforgettable experience that speaks directly to your user’s minds. <br />  <br /> <br />Our design teams excel in transforming complex concepts into intuitive, visually captivating interfaces that not only delight but also drive results toward digital product success.",
+          "image": "/assets/images/home/dynamic-iphone.svg"
+        },
+        {
+          "title": "<span class=\"!text-primary-brand-200\">Future-proof</span> Solutions ",
+          "content": "At foxcode, we specialize in delivering scalable solutions tailored to your needs. With our extensive industry experience, we leverage innovative technology to provide effective and future-proof solutions. <br />  <br /> <br /> Our approach ensures that each project is both cutting-edge and cost- effective, offering high-quality results without breaking the bank. <br/> Trust us to bring your vision to life with a blend of creativity, expertise, and a deep understanding of the latest industry trends.",
+          "logos": [
+            "/assets/images/companies/aws.svg",
+            "/assets/images/companies/oracle.svg",
+            "/assets/images/companies/google.svg",
+            "/assets/images/companies/microsoft.svg"
+          ],
+          "backgroundVideo": "/assets/videos/background-video-slider.mp4"
+        }
       ]
     },
     "testimonials": {

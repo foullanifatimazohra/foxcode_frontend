@@ -3,6 +3,7 @@ import Services from "@/views/home/services";
 import Portfolio from "@/views/home/portfolio";
 import PlayGrounds from "@/views/home/play-grounds";
 import Hero from "@/views/home/hero";
+import FloatingButton from "@/views/home/floating-button";
 import FeaturedProjects from "@/views/home/featured-projects";
 import Faq from "@/views/home/faq";
 import Clients from "@/views/home/clients";
@@ -20,7 +21,7 @@ export function generateMetadata({
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <Hero />
       <About />
       <Portfolio />
@@ -31,6 +32,7 @@ export default function Home() {
       <Clients />
       <Testimonials />
       <Faq />
+      <FloatingButton />
     </main>
   );
 }
