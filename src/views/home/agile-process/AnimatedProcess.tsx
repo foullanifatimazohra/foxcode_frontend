@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { motion, useAnimation, useInView } from "framer-motion";
 
@@ -15,17 +15,24 @@ const cardVariants = {
 
 function AnimatedProcess() {
   const controls = useAnimation();
+
   const t = useTranslations();
+
   const ref = useRef(null);
+
   const isInView = useInView(ref);
 
-  if (isInView) {
-    controls.start((i) => ({
-      opacity: 1,
-      x: 0,
-      transition: { delay: i * 0.2 },
-    }));
-  }
+  useEffect(() => {
+    if (isInView) {
+      controls.start((i) => ({
+        opacity: 1,
+        x: 0,
+        transition: { delay: i * 0.2 },
+      }));
+    } else {
+      controls.start("hidden");
+    }
+  }, [isInView, controls]);
 
   return (
     <section
@@ -39,6 +46,7 @@ function AnimatedProcess() {
           animate={controls}
           custom={index}
           className="pl-3"
+          variants={cardVariants}
         >
           <p className="my-8 text-[20px] font-bold">{process.title}</p>
           {process.steps.map((text: string, stepIndex: number) => (
@@ -47,12 +55,13 @@ function AnimatedProcess() {
               className="flex w-fit gap-4 px-2 py-1 rounded-[72px] border border-primary-gray-100 items-center"
               initial="hidden"
               animate={controls}
-              custom={stepIndex} // Pass the index for delay calculation
-              style={{ marginLeft: `${stepIndex * 20}px`, marginTop: "16px" }} // Staggered margin effect
+              custom={stepIndex}
+              style={{ marginLeft: `${stepIndex * 20}px`, marginTop: "16px" }}
               variants={cardVariants}
             >
               <p className="h-[32px] w-[32px] flex items-center justify-center rounded-full bg-primary-gray-200">
-                {stepIndex + 1}
+                {index * process.steps.length + stepIndex + 1}{" "}
+                {/* Sequential Numbering */}
               </p>
               <p className="font-medium">{text}</p>
             </motion.div>
