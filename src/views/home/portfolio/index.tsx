@@ -69,7 +69,7 @@ function portfolioCard(
       </div>
       <Image
         src={backgroundImage}
-        alt={title}
+        alt={t(title)}
         width={600}
         height={360}
         className="object-contain"

@@ -31,7 +31,13 @@ function Button({
   const buttonStyle = `button relative inline-flex items-center gap-2 justify-center ${className || ""} ${styles[variant]} ${sizes[size]}`;
 
   const renderButton = () => (
-    <button type={type} className={buttonStyle} onClick={onClick} {...props}>
+    <button
+      type={type}
+      className={buttonStyle}
+      onClick={onClick}
+      aria-label="button"
+      {...props}
+    >
       {startIcon && startIcon}
       <span>{children}</span>
       {endIcon && endIcon}

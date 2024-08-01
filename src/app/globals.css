@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Biennale";
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/biennale.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Biennale", sans-serif;
+}
+
 .custom-linear-gradient {
   background: linear-gradient(
     201.64deg,

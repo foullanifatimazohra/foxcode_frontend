@@ -124,8 +124,9 @@ export const ProductCard = ({
       className="group/product h-96 md:w-[600px] w-[20rem] relative flex-shrink-0"
     >
       <Link
-        href={product.link}
+        href={product.link || "#"}
         className="block group-hover/product:shadow-2xl "
+        aria-label={product.title || " product gallery"}
       >
         <Image
           src={product.thumbnail}
