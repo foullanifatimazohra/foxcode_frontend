@@ -169,6 +169,39 @@
           "text": "Delivering advanced process automation solutions, we enhance efficiency and accuracy. Our scalable systems streamline workflows and boost productivity."
         }
       ]
+    },
+    "agileProcess": {
+      "subtitle": "Digital Products <br /> Agile process",
+      "title": "Our rapid agile process ensures the swift development of digital products from inception to completion. Through a comprehensive full-cycle project flow,<highlight> we deliver high-quality solutions efficiently, adapting to changing needs and maximizing project success.</highlight>",
+      "process": [
+        {
+          "title": "Product Strategy",
+          "steps": [
+            "Idea Validation",
+            "Market Research",
+            "Product Positioning",
+            "Functional Documentation"
+          ]
+        },
+        {
+          "title": "UX Design",
+          "steps": ["Ux Research", "User Flows", "Prototyping"]
+        },
+        {
+          "title": "UI Design",
+          "steps": ["Moodboards", "Visual Design", "Hand-Off"]
+        },
+        {
+          "title": "Development",
+          "steps": [
+            "System Architecture",
+            "Front-End Dev",
+            "Backend Dev",
+            "QA",
+            "Launch"
+          ]
+        }
+      ]
     }
   },
   "header": {
