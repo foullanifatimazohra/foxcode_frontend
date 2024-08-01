@@ -35,7 +35,7 @@ function FeaturedProjects() {
             }}
           />
         </div>
-        <div className="px-5 grid md:grid-cols-3 gap-4 mx-auto mt-20 md:auto-rows-[260px]">
+        <div className="px-5 grid lg:grid-cols-3 md:grid-cols-2 gap-4 mx-auto mt-20 md:auto-rows-[260px]">
           {t
             .raw("home.featuredProjects.projects")
             .map((card: any, index: number) => (

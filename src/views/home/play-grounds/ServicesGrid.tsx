@@ -75,7 +75,7 @@ const Card: React.FC<CardProps> = ({ isOpen = false, onToggle, service }) => {
   return (
     <motion.div
       layout
-      className={`relative rounded-lg ${isOpen ? "h-auto bg-primary-gray-900 bg-opacity-85 bg-blend-multiply" : "!bg-primary-gray-100"} p-8`}
+      className={`relative rounded-lg ${isOpen ? "h-auto bg-primary-gray-800 bg-opacity-90 bg-blend-screen" : "!bg-primary-gray-100"} p-8`}
     >
       <div className="flex z-10 justify-between items-start">
         <Image alt="icon" src={icon} width={64} height={64} />
@@ -104,7 +104,7 @@ const Card: React.FC<CardProps> = ({ isOpen = false, onToggle, service }) => {
       </p>
 
       {isOpen && (
-        <ul className="grid grid-cols-2 gap-3 list-disc list-inside text-white mt-[42px]">
+        <ul className="grid lg:grid-cols-2 grid-cols-1 gap-3 list-disc list-inside text-white mt-[42px]">
           {items.map((item: string, index: number) => (
             <li key={index}>{item}</li>
           ))}
@@ -125,9 +125,8 @@ const Card: React.FC<CardProps> = ({ isOpen = false, onToggle, service }) => {
             height: "100%",
             objectFit: "cover",
             zIndex: -1,
-            opacity: 0.5,
+            opacity: 1,
           }}
-          className="video-container relative"
         >
           <source
             src="/assets/videos/background-services.mp4"

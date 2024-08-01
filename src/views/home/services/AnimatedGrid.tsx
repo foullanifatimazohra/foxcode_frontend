@@ -14,7 +14,7 @@ export default function AnimatedGrid() {
   const isActive = (index: number) => hoveredIndex.includes(index);
 
   return (
-    <div className="grid md:grid-cols-4 grid-col-1 gap-8 my-[100px] flex-wrap items-center justify-center">
+    <div className="grid md:grid-cols-2 grid-col-1 lg:grid-cols-4 gap-8 my-[100px] flex-wrap items-center justify-center">
       {keyServices.map((service: any, index: number) => (
         <Card
           key={index}

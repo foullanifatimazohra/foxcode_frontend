@@ -8,7 +8,7 @@ async function Portfolio() {
   const t = await getTranslations();
   return (
     <section className="container max-sm:px-5 mx-auto my-[100px]">
-      <div className="flex justify-between gap-4 items-end max-sm:flex-col">
+      <div className="flex justify-between gap-4 items-end flex-col lg:flex-row">
         <div className="basis-1/2">
           <p
             className="font-medium text-primary-gray-900"
@@ -32,7 +32,7 @@ async function Portfolio() {
       </div>
 
       {/* Portfolio Cards */}
-      <div className="flex flex-col d gap-[100px] mt-[70px]">
+      <div className="flex flex-col gap-[100px] mt-[70px]">
         {portfolioCards.map((card: any, index: number) =>
           portfolioCard(index, card, t, index > 0)
         )}
@@ -49,7 +49,10 @@ function portfolioCard(
 ): React.JSX.Element {
   const { logo, text, backgroundImage, title } = card || {};
   return (
-    <div key={index} className="flex gap-5 justify-between max-sm:flex-col">
+    <div
+      key={index}
+      className="flex gap-5 justify-between flex-col lg:flex-row"
+    >
       <div
         className={`basis-1/2 py-[64px] max-w-[50ch] ${displayDivider ? "border-t border-primary-gray-200" : ""}`}
       >
