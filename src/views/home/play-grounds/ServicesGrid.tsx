@@ -75,7 +75,7 @@ const Card: React.FC<CardProps> = ({ isOpen = false, onToggle, service }) => {
   return (
     <motion.div
       layout
-      className={`relative rounded-lg ${!isOpen ? "!bg-primary-gray-100" : "h-auto"} p-8`}
+      className={`relative rounded-lg ${isOpen ? "h-auto bg-primary-gray-900 bg-opacity-85 bg-blend-multiply" : "!bg-primary-gray-100"} p-8`}
     >
       <div className="flex z-10 justify-between items-start">
         <Image alt="icon" src={icon} width={64} height={64} />
@@ -118,6 +118,7 @@ const Card: React.FC<CardProps> = ({ isOpen = false, onToggle, service }) => {
           muted
           style={{
             position: "absolute",
+            borderRadius: "8px",
             top: 0,
             left: 0,
             width: "100%",
@@ -126,6 +127,7 @@ const Card: React.FC<CardProps> = ({ isOpen = false, onToggle, service }) => {
             zIndex: -1,
             opacity: 0.5,
           }}
+          className="video-container relative"
         >
           <source
             src="/assets/videos/background-services.mp4"

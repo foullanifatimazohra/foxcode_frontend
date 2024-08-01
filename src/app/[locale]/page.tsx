@@ -1,8 +1,10 @@
+import Testimonials from "@/views/home/testimonials";
 import Services from "@/views/home/services";
 import Portfolio from "@/views/home/portfolio";
 import PlayGrounds from "@/views/home/play-grounds";
 import Hero from "@/views/home/hero";
 import FeaturedProjects from "@/views/home/featured-projects";
+import Faq from "@/views/home/faq";
 import Clients from "@/views/home/clients";
 import AgileProcess from "@/views/home/agile-process";
 import About from "@/views/home/about";
@@ -27,6 +29,8 @@ export default function Home() {
       <FeaturedProjects />
       <AgileProcess />
       <Clients />
+      <Testimonials />
+      <Faq />
     </main>
   );
 }

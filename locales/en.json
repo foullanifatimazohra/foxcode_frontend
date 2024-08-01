@@ -90,8 +90,32 @@
       "cta": "View all Services",
       "services": [
         {
+          "title": "Research  Strategy",
+          "text": "Discovering, defining and planning the product value proposition and roadmap.",
+          "items": [
+            "user research and testing",
+            "UX & UI design",
+            "Monetization throgh UX ",
+            "Information Architecture"
+          ]
+        },
+        {
           "title": "Experience Design",
           "text": "Identifying problems, needs and solutions through a validated and scientific approach.",
+          "items": [
+            "user research and testing",
+            "UX & UI design",
+            "Monetization throgh UX ",
+            "Information Architecture",
+            "prototype development",
+            "Ux auditing",
+            "Gamification UX  strategy",
+            "AR, XR Design"
+          ]
+        },
+        {
+          "title": "Software Engineering",
+          "text": "Modern, scalable, and high performing mobile/web applications.",
           "items": [
             "user research and testing",
             "user research and testing",
@@ -102,32 +126,8 @@
           ]
         },
         {
-          "title": "Experience Design",
-          "text": "Identifying problems, needs and solutions through a validated and scientific approach.",
-          "items": [
-            "user research and testing",
-            "user research and testing",
-            "user research and testing",
-            "user research and testing",
-            "user research and testing",
-            "user research and testing"
-          ]
-        },
-        {
-          "title": "Experience Design",
-          "text": "Identifying problems, needs and solutions through a validated and scientific approach.",
-          "items": [
-            "user research and testing",
-            "user research and testing",
-            "user research and testing",
-            "user research and testing",
-            "user research and testing",
-            "user research and testing"
-          ]
-        },
-        {
-          "title": "Experience Design",
-          "text": "Identifying problems, needs and solutions through a validated and scientific approach.",
+          "title": "Scale & Support",
+          "text": "Building custom scalable cloud solutions that solve your specific business need.",
           "items": [
             "user research and testing",
             "user research and testing",
@@ -200,6 +200,46 @@
             "QA",
             "Launch"
           ]
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Our <highlight>client’s </highlight> are saying",
+      "cards": [
+        {
+          "name": "Kamal Al Harrasi",
+          "content": "“On behalf Of Omran, I would like to express our gratitude appreciation to Foxcode for their excellent services and performance. Foxcode has successfully delivered multiple projects to Omran which enabled our team to provide The targeted services on time and as planned.”",
+          "jobPosition": "Applications and solutions manager, Omran"
+        },
+        {
+          "name": "Kamal Al Harrasi",
+          "content": "“On behalf Of Omran, I would like to express our gratitude appreciation to Foxcode for their excellent services and performance. Foxcode has successfully delivered multiple projects to Omran which enabled our team to provide The targeted services on time and as planned.”",
+          "jobPosition": "Applications and solutions manager, Omran"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked <highlight>Questions</highlight>",
+      "questions": [
+        {
+          "question": "How do you ensure the quality of your projects?",
+          "answer": "Will get to know your business inside out. They will assess the traffic that your website is getting and establish the best online marketing platforms to invest in. Part of a digital marketing agency’s strategy should involve continual evaluation to ensure a client is maintaining the perfect balance between their marketing spend and the results they’re getting.."
+        },
+        {
+          "question": "How do you ensure the security of the software Do you develop?",
+          "answer": "Will get to know your business inside out. They will assess the traffic that your website is getting and establish the best online marketing platforms to invest in. Part of a digital marketing agency’s strategy should involve continual evaluation to ensure a client is maintaining the perfect balance between their marketing spend and the results they’re getting.."
+        },
+        {
+          "question": "Can you work with our existing systems and integrate new features?",
+          "answer": "Will get to know your business inside out. They will assess the traffic that your website is getting and establish the best online marketing platforms to invest in. Part of a digital marketing agency’s strategy should involve continual evaluation to ensure a client is maintaining the perfect balance between their marketing spend and the results they’re getting.."
+        },
+        {
+          "question": " Do you provide support after the project’s completion?",
+          "answer": "Will get to know your business inside out. They will assess the traffic that your website is getting and establish the best online marketing platforms to invest in. Part of a digital marketing agency’s strategy should involve continual evaluation to ensure a client is maintaining the perfect balance between their marketing spend and the results they’re getting.."
+        },
+        {
+          "question": "My idea is not complete, can you help to define the best roadmap and technology for MVP (Minimum Viable Product)?",
+          "answer": "Will get to know your business inside out. They will assess the traffic that your website is getting and establish the best online marketing platforms to invest in. Part of a digital marketing agency’s strategy should involve continual evaluation to ensure a client is maintaining the perfect balance between their marketing spend and the results they’re getting.."
         }
       ]
     },
