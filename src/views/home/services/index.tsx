@@ -9,7 +9,7 @@ async function Services() {
   const t = await getTranslations();
 
   return (
-    <section className="container my-[100px] md:mx-auto px-2">
+    <section className="container max-sm:px-5 mx-auto my-[100px]">
       <h3
         className="text-h3 font-bold text-primary-gray-900"
         dangerouslySetInnerHTML={{

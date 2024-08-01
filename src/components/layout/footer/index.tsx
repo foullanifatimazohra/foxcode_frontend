@@ -9,7 +9,7 @@ async function Footer() {
 
   return (
     <footer className="border-t border-primary-gray-200 py-12">
-      <div className="container flex flex-col px-2 md:mx-auto">
+      <div className="container flex flex-col mx-auto max-sm:px-5">
         <div className="divide-y divide-primary-gray-200">
           <CallToAction />
 

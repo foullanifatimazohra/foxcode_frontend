@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <header className="py-5 border-b border-primary-gray-200">
-      <div className="container px-2 md:mx-auto flex items-center justify-between">
+      <div className="container mx-auto max-sm:px-5 flex items-center justify-between">
         <Image
           src="/assets/icons/logo/logo.svg"
           alt="foxcode Logo"

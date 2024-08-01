@@ -92,3 +92,22 @@ export const playGroundsCardsIcons = [
   "/assets/images/home/rocket.svg",
   "/assets/images/home/star.svg",
 ];
+
+export const clientsLogos = [
+  "/assets/images/companies/bank-muskat.svg",
+  "/assets/images/companies/data-park.svg",
+  "/assets/images/companies/omran-group.svg",
+  "/assets/images/companies/bank-dofar.svg",
+  "/assets/images/companies/oman-oil-black.svg",
+  "/assets/images/companies/world-health-organization.svg",
+  "/assets/images/companies/ministry-of-finance-1.svg",
+  "/assets/images/companies/intaji.svg",
+  "/assets/images/companies/experience-oman.svg",
+  "/assets/images/companies/oman-business.svg",
+  "/assets/images/companies/skzo-nobel.svg",
+  "/assets/images/companies/oman-adventure.svg",
+  "/assets/images/companies/ministry.jpg",
+  "/assets/images/companies/duqm.svg",
+  "/assets/images/companies/atanahotels3.svg",
+  "/assets/images/companies/expo-dubai.svg",
+];

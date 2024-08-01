@@ -11,7 +11,7 @@ async function Hero() {
   const t = await getTranslations();
 
   return (
-    <section className="container py-8 flex flex-col gap-6 items-center px-2 md:mx-auto">
+    <section className="container py-8 flex flex-col gap-6 items-center max-sm:px-5 mx-auto">
       <h1
         className="text-h1 text-center leading-[66px] text-primary-gray-900 max-w-[25ch] font-bold"
         dangerouslySetInnerHTML={{

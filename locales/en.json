@@ -205,7 +205,8 @@
     },
     "clients": {
       "title": "<highlight>Adding Value </highlight> <br />To Exceptional Clients",
-      "numberOfPartners": "<b>+80</b> <br /> Success Partners"
+      "numberOfPartners": "+80",
+      "label": "Success Partners"
     }
   },
   "header": {

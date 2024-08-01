@@ -6,7 +6,7 @@ async function AgileProcess() {
   const t = await getTranslations();
 
   return (
-    <section className="container my-[100px] md:mx-auto px-2">
+    <section className="container my-[100px] mx-auto max-sm:px-5">
       <div className="max-w-[70ch]">
         <p
           className="font-medium text-primary-gray-900"

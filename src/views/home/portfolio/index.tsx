@@ -7,7 +7,7 @@ import Button from "@/components/ui/Button";
 async function Portfolio() {
   const t = await getTranslations();
   return (
-    <section className="container my-[100px] md:mx-auto px-2">
+    <section className="container max-sm:px-5 mx-auto my-[100px]">
       <div className="flex justify-between gap-4 items-end max-sm:flex-col">
         <div className="basis-1/2">
           <p
