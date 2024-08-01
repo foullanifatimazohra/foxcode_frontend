@@ -13,7 +13,7 @@ async function Hero() {
   return (
     <section className="container py-8 flex flex-col gap-6 items-center max-sm:px-5 mx-auto">
       <h1
-        className="text-h1 text-center leading-[66px] text-primary-gray-900 max-w-[25ch] font-bold"
+        className="text-h1 text-center leading-[66px] text-primary-gray-900 max-w-[20ch] font-bold"
         dangerouslySetInnerHTML={{
           __html: t.markup("home.hero.title", {
             highlight: (chunks: string) =>

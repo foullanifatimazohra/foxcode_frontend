@@ -111,3 +111,56 @@ export const clientsLogos = [
   "/assets/images/companies/atanahotels3.svg",
   "/assets/images/companies/expo-dubai.svg",
 ];
+
+export const portfolioProjects = [
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/1.png",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/2.png",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/3.png",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/4.png",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/5.png",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/6.png",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/7.png",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/8.png",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/9.png",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "/assets/images/mockups/10.png",
+  },
+];

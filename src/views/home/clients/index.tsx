@@ -1,7 +1,8 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { clientsLogos } from "@/constants";
+import { clientsLogos, portfolioProjects } from "@/constants";
+import { HeroParallax } from "@/components/ui/hero-parallax/hero-parallax";
 
 async function Clients() {
   const t = await getTranslations();
@@ -17,9 +18,7 @@ async function Clients() {
           }),
         }}
       />
-
       {/* Clients Logos */}
-
       <div className="grid md:grid-cols-4 grid-cols-1 gap-8 auto-rows-[150px] my-[48px]">
         {clientsLogos.map((srcLink: string, index: number) => (
           <div
@@ -42,6 +41,8 @@ async function Clients() {
           <p className="font-medium">{t("home.clients.label")}</p>
         </div>
       </div>
+      {/* Parallax Portfolio  */}
+      <HeroParallax products={portfolioProjects} />
     </section>
   );
 }
