@@ -21,3 +21,19 @@
     rgba(20, 29, 47, 0.25)
   );
 }
+
+.card-gradient {
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(52, 64, 84, 0.51) 0%,
+    rgba(52, 64, 84, 0) 100%
+  );
+
+  background: linear-gradient(
+    115.75deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+}

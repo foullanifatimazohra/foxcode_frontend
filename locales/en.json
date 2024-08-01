@@ -138,6 +138,37 @@
           ]
         }
       ]
+    },
+    "featuredProjects": {
+      "subtitle": "Featured digital <br /> Products projects",
+      "title": "Our deep industry knowledge and expertise in digital product design empower us to address the right challenges,<highlight> craft the right solutions, and ensure they are designed and developed for maximum ROI.</highlight>",
+      "cta": "🚀  Book 30m session",
+      "projects": [
+        {
+          "title": "🔥 Web 3.0",
+          "text": "We help established companies enhance their market positions with Web3 technologies and collaborate with startups to launch standout Web3 products"
+        },
+        {
+          "title": "FinTech",
+          "text": "We design innovative financial solutions that delight users and improve business metrics by prioritizing end-user experience."
+        },
+        {
+          "title": "E- Commers",
+          "text": "Partnering with leading brands, we deliver e-commerce design and development focused on world-class standards and conversion optimization."
+        },
+        {
+          "title": "Booking Solutions",
+          "text": "robust, scalable, and customisable booking portals designed for all sectors, enhancing user experience and driving business success through simplified reservations and maximised customer satisfaction."
+        },
+        {
+          "title": "🤖 AI & ML",
+          "text": "Engineering and developing robust, scalable architectures for AI and ML products, we create unique differentiators that set your product apart. Our expertise ensures optimal AI model performance with minimal iterations."
+        },
+        {
+          "title": "Process automation ",
+          "text": "Delivering advanced process automation solutions, we enhance efficiency and accuracy. Our scalable systems streamline workflows and boost productivity."
+        }
+      ]
     }
   },
   "header": {
