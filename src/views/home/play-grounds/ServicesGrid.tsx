@@ -75,7 +75,7 @@ const Card: React.FC<CardProps> = ({ isOpen = false, onToggle, service }) => {
   return (
     <motion.div
       layout
-      className={`relative rounded-lg ${isOpen ? "h-auto bg-primary-gray-800 bg-opacity-90 bg-blend-screen" : "!bg-primary-gray-100"} p-8`}
+      className={`relative rounded-lg ${!isOpen ? "bg-primary-gray-100" : "transparent"} p-8`}
     >
       <div className="flex z-10 justify-between items-start">
         <Image alt="icon" src={icon} width={64} height={64} />
@@ -112,27 +112,37 @@ const Card: React.FC<CardProps> = ({ isOpen = false, onToggle, service }) => {
       )}
 
       {isOpen && (
-        <motion.video
-          autoPlay
-          loop
-          muted
-          style={{
-            position: "absolute",
-            borderRadius: "8px",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            zIndex: -1,
-            opacity: 1,
-          }}
-        >
-          <source
-            src="/assets/videos/background-services.mp4"
-            type="video/mp4"
+        <>
+          {" "}
+          <motion.div
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="absolute top-0 left-0 w-full h-full bg-opacity-90 bg-[#26294F] bg-blend-screen rounded-lg"
+            style={{ zIndex: -1 }}
           />
-        </motion.video>
+          <motion.video
+            autoPlay
+            loop
+            muted
+            style={{
+              position: "absolute",
+              borderRadius: "8px",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              zIndex: -2,
+              opacity: 1,
+            }}
+          >
+            <source
+              src="/assets/videos/background-services.mp4"
+              type="video/mp4"
+            />
+          </motion.video>
+        </>
       )}
     </motion.div>
   );
