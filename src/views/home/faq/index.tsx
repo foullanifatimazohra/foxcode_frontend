@@ -37,7 +37,7 @@ async function Faq() {
           width={140}
           height={300}
           alt="background Image"
-          className="absolute top-0 right-0 w-auto object-contain"
+          className="absolute top-0 right-0 rtl:left-0 rtl:right-auto object-contain"
         />
       </div>
     </section>

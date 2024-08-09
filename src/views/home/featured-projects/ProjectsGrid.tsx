@@ -35,7 +35,7 @@ function ProjectsGrid() {
         <HoverBorderGradient
           containerClassName="rounded-full border-none"
           as="button"
-          className="bg-[#131F3C] text-white radius-[100px] group px-10 py-5 flex items-center space-x-2"
+          className="bg-[#131F3C] text-white rounded-[100px] group px-10 py-5 flex items-center space-x-2"
         >
           <motion.div
             className="group-hover:block"

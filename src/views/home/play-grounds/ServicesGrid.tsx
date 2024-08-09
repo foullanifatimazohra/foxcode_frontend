@@ -9,7 +9,7 @@ import { playGroundsCardsIcons } from "@/constants";
 import Button from "@/components/ui/Button";
 
 function ServicesGrid() {
-  const [openCardIndex, setOpenCardIndex] = useState<number | null>(null);
+  const [openCardIndex, setOpenCardIndex] = useState<number | null>(1);
 
   const t = useTranslations();
 

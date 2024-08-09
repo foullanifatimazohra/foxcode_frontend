@@ -1,5 +1,6 @@
 "use client";
 
+import { useMediaQuery } from "react-responsive";
 import { useRef } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -12,6 +13,8 @@ function AnimatedProcess() {
   const animatedSectionRef = useRef(null);
 
   const { scrollYProgress } = useScroll({ target: animatedSectionRef });
+
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   let sequentialNumber = 0;
 
@@ -45,7 +48,8 @@ function AnimatedProcess() {
                   marginTop: "16px",
                   [locale === "ar" ? "marginRight" : "marginLeft"]:
                     `${stepIndex * 20}px`,
-                  x: xTransform,
+                  x: isTabletOrMobile ? 0 : xTransform,
+                  //  ...(!isTabletOrMobile && { x: xTransform }),
                 }}
               >
                 <p className="h-[32px] w-[32px] flex items-center justify-center rounded-full bg-primary-gray-200">
