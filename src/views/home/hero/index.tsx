@@ -5,8 +5,6 @@ import { heroCompaniesLogos } from "@/constants";
 import MagneticFramer from "@/components/ui/magnetic-framer";
 import Button from "@/components/ui/Button";
 
-import Mask from "../../../../public/assets/images/home/mask.svg";
-
 async function Hero() {
   const t = await getTranslations();
 
@@ -47,11 +45,12 @@ const maskVideo = (
       }}
       autoPlay
       muted
+      playsInline
+      preload="none"
       loop
     >
       <source src="/assets/videos/mask-video.mp4" type="video/mp4" />
     </video>
-    <Image src={Mask} fill alt="mask Video" className="hidden" />
   </div>
 );
 

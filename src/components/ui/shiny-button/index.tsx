@@ -55,7 +55,7 @@ export default function ShinyButton(props: Props) {
 
   const target = useRef<null | HTMLDivElement>(null);
 
-  function calculateSpeed(x: number, y: number, maxSpeed = 6, minSpeed = 0.6) {
+  function calculateSpeed(x: number, y: number, maxSpeed = 6, minSpeed = 4) {
     // Pythagorean
     const distance = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
     const speed =
