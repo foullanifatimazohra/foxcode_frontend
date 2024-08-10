@@ -79,7 +79,7 @@ function ProcessSlider() {
                   width={480}
                   height={650}
                   alt="background image"
-                  className="absolute h-full top-[-100px] bottom-[10] right-0 rounded-lg z-[-1] object-cover"
+                  className="absolute h-full top-[-100px] bottom-[10] right-0 rtl:right-auto rtl:left-0 rounded-lg z-[-1] object-cover"
                 />
               </>
             )}

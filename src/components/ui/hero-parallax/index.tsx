@@ -58,7 +58,7 @@ export const HeroParallax = ({
     <div
       ref={ref}
       dir="ltr"
-      className="h-[200vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="min-h-[200vh] py-10 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <motion.div
         style={{
@@ -67,7 +67,7 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className=""
+        className="h-full"
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-10 mb-20">
           {firstRow.map((product) => (

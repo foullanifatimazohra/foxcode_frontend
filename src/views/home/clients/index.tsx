@@ -2,7 +2,7 @@ import React from "react";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { clientsLogos, portfolioProjects } from "@/constants";
-import { HeroParallax } from "@/components/ui/hero-parallax/hero-parallax";
+import { HeroParallax } from "@/components/ui/hero-parallax";
 
 async function Clients() {
   const t = await getTranslations();

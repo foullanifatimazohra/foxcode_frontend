@@ -7,7 +7,7 @@ async function About() {
   const t = await getTranslations();
 
   return (
-    <section className="flex justify-center gap-4 w-full items-center my-[100px] text-center flex-col">
+    <section className="container mx-auto max-sm:px-5 flex justify-center gap-4 items-center my-[100px] text-center flex-col">
       <p
         className="text-body mt-2.5 font-normal text-primary-gray-900 max-w-[50ch]"
         dangerouslySetInnerHTML={{

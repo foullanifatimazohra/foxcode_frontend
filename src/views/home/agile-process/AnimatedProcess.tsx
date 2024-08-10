@@ -48,7 +48,7 @@ function AnimatedProcess() {
                   marginTop: "16px",
                   [locale === "ar" ? "marginRight" : "marginLeft"]:
                     `${stepIndex * 20}px`,
-                  x: isTabletOrMobile ? 0 : xTransform,
+                  x: isTabletOrMobile ? 1 : xTransform,
                   //  ...(!isTabletOrMobile && { x: xTransform }),
                 }}
               >
