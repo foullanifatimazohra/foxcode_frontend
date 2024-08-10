@@ -6,7 +6,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import ShinyButton from "@/components/ui/shiny-button";
 
 function ProcessSlider() {
   const t = useTranslations();
@@ -38,22 +38,15 @@ function ProcessSlider() {
                 }}
               />
               {card.cta && (
-                <HoverBorderGradient
-                  containerClassName="rounded-full border-none"
-                  as="button"
-                  className="border-white bg-[#131F3C] text-white radius-[100px] group px-5 py-3 flex items-center space-x-2"
-                >
-                  <motion.div
-                    className="sparkles group-hover:block"
-                    animate={{ opacity: [0, 1, 0] }}
-                    transition={{
-                      duration: 1,
-                      repeat: Infinity,
-                      repeatType: "loop",
-                    }}
-                  />
-                  <span>{t(card.cta)}</span>
-                </HoverBorderGradient>
+                <div className="w-fit">
+                  <ShinyButton
+                    width={208}
+                    height={44}
+                    className="block text-white px-6 py-[10px] group flex items-center space-x-2 rounded-full border-none"
+                  >
+                    <span>{t(card.cta)}</span>
+                  </ShinyButton>
+                </div>
               )}
               {card.logos && (
                 <div className="flex md:flex-row flex-col gap-4">

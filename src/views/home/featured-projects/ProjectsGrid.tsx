@@ -2,7 +2,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import ShinyButton from "@/components/ui/shiny-button";
 import { GlowCard } from "@/components/ui/glow-card";
 
 function ProjectsGrid() {
@@ -32,18 +32,13 @@ function ProjectsGrid() {
           ))}
       </div>
       <div className="my-10 flex justify-center text-center">
-        <HoverBorderGradient
-          containerClassName="rounded-full border-none"
-          as="button"
-          className="bg-[#131F3C] text-white rounded-[100px] group px-10 py-5 flex items-center space-x-2"
+        <ShinyButton
+          width={228}
+          height={60}
+          className="text-white px-6 py-4 group flex items-center space-x-2 rounded-full border-none"
         >
-          <motion.div
-            className="group-hover:block"
-            animate={{ opacity: [0, 1, 0] }}
-            transition={{ duration: 1, repeat: Infinity, repeatType: "loop" }}
-          />
           <span>{t("home.featuredProjects.cta")}</span>
-        </HoverBorderGradient>
+        </ShinyButton>
       </div>
     </div>
   );
